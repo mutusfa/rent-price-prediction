@@ -22,7 +22,7 @@ scaler = pickle.load(open("models/scaler.pck", "rb"))
 src.database.models.Base.metadata.create_all(bind=engine)
 
 # Dependency
-def get_db():
+def get_session():
     """Starts a session and closes it after user is done."""
     db = SessionLocal()
     try:
@@ -78,7 +78,7 @@ def make_inference(
 @app.get("/inferences/")
 def get_last_inferences(
     limit: float = 10,
-    session=Depends(get_db),
+    session=Depends(get_session),
     response_model=List[InferenceLog],
-) -> List[InferenceLog]:
+) -> List[src.database.models.InferenceLog]:
     return get_inferences(session, limit)
