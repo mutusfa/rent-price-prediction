@@ -83,6 +83,15 @@ def test_make_intermediate():
     )
     assert not df.isna().any(axis=None)
     assert df.shape[0] > 100
-    numeric_cols = ["latitude", "longitude", "floor_area_m2", "monthly_rent", "number_of_rooms", "floor", "number_of_floors", "build_year"]
+    numeric_cols = [
+        "latitude",
+        "longitude",
+        "floor_area_m2",
+        "monthly_rent",
+        "number_of_rooms",
+        "floor",
+        "number_of_floors",
+        "build_year",
+    ]
     for col in numeric_cols:
         assert df[col].dtype == float

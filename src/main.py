@@ -7,20 +7,28 @@ import numpy as np
 import pandas as pd
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
+from sqlalchemy.engine import Connection
 
 from src.models import encode_data
-from src.database.repository import log_inference
-from src.database import Engine, get_connection
+from src.database.repository import log_inference, get_inferences
+from src.database import engine, get_connection, SessionLocal
 import src.database.models
 
 app = FastAPI()
 model = pickle.load(open("models/model.pck", "rb"))
 encoder = pickle.load(open("models/encoder.pck", "rb"))
 scaler = pickle.load(open("models/scaler.pck", "rb"))
-engine = Engine()
 
 src.database.models.Base.metadata.create_all(bind=engine)
 
+# Dependency
+def get_db():
+    """Starts a session and closes it after user is done."""
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
 
 @app.get("/")
 async def hello():
@@ -43,6 +51,13 @@ class FeaturesForRentInference(BaseModel):
     equipment: str
 
 
+class InferenceLog(FeaturesForRentInference):
+    inferred_monthly_rent: float
+
+    class Config:
+        orm_mode = True
+
+
 def _prepare_for_inference(features: List[FeaturesForRentInference]) -> np.ndarray:
     features_df = pd.DataFrame(jsonable_encoder(features))
     encoded, *_ = encode_data(features_df, encoder, scaler)
@@ -52,9 +67,18 @@ def _prepare_for_inference(features: List[FeaturesForRentInference]) -> np.ndarr
 @app.post("/predict/")
 def make_inference(
     features: List[FeaturesForRentInference],
-    db_session: Session = Depends(lambda: get_connection(engine)),
-):
+    db_connection: Connection = Depends(get_connection),
+) -> List[float]:
     prepared_features, features_df = _prepare_for_inference(features)
     result = model.predict(prepared_features)
-    log_inference(db_session, features_df, result)
+    log_inference(db_connection, features_df, result)
     return result.tolist()
+
+
+@app.get("/inferences/")
+def get_last_inferences(
+    limit: float = 10,
+    session=Depends(get_db),
+    response_model=List[InferenceLog],
+) -> List[InferenceLog]:
+    return get_inferences(session, limit)

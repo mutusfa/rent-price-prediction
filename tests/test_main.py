@@ -101,3 +101,11 @@ def test_predict(features_for_inference, targets_for_inference):
     inferred = np.array(response.json())
     for idx, (true, pred) in enumerate(zip(targets_for_inference, inferred)):
         assert pytest.approx(true, 300) == pred
+
+
+def test_get_inferences():
+    """Relies on prod database having data"""
+    url = f"http://{os.environ['SERVER']}:{os.environ['PORT']}/inferences/"
+    response = requests.get(url)
+    logs = response.json()
+    assert len(logs) == 10

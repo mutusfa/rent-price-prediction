@@ -5,7 +5,7 @@ import src.database as database
 
 @pytest.fixture
 def engine():
-    return database.Engine()
+    return database.engine
 
 
 @pytest.fixture
