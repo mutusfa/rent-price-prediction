@@ -62,8 +62,10 @@ def transform_to_numeric_values(dataframe: pd.DataFrame, inplace=False):
         "number_of_floors",
         "build_year",
     ]
-    if not inplace:
+
+    if inplace:
         dataframe = dataframe.copy()
+
     dataframe.loc[:, "floor_area_m2"] = dataframe.loc[:, "floor_area_m2"].str.replace(
         r"m²|\s", "", regex=True
     )
@@ -73,6 +75,7 @@ def transform_to_numeric_values(dataframe: pd.DataFrame, inplace=False):
     dataframe.loc[:, "build_year"] = dataframe.loc[:, "build_year"].str.replace(
         r"^.*?(?P<build_year>\d{4}).*$", r"\g<build_year>", regex=True
     )
+
     for col in numeric_cols:
         try:
             dataframe.loc[:, col] = dataframe.loc[:, col].str.replace(",", ".")
@@ -82,11 +85,12 @@ def transform_to_numeric_values(dataframe: pd.DataFrame, inplace=False):
     return dataframe
 
 
-def make_intermediate(raw_data_filename: str = "data/raw/rent.csv"):
+def make_intermediate(raw_data_filename: str = "data/raw/rent.csv", output: str = "data/intermediate/rent.csv"):
     dataframe = load_data(raw_data_filename)
     dataframe = expand_data(dataframe)
     dataframe = drop_and_rename_columns(dataframe)
     dataframe = transform_to_numeric_values(dataframe)
+    dataframe.to_csv(output)
     return dataframe
 
 
