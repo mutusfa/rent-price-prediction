@@ -85,7 +85,10 @@ def transform_to_numeric_values(dataframe: pd.DataFrame, inplace=False):
     return dataframe
 
 
-def make_intermediate(raw_data_filename: str = "data/raw/rent.csv", output: str = "data/intermediate/rent.csv"):
+def make_intermediate(
+    raw_data_filename: str = "data/raw/rent.csv",
+    output: str = "data/intermediate/rent.csv",
+) -> pd.DataFrame:
     dataframe = load_data(raw_data_filename)
     dataframe = expand_data(dataframe)
     dataframe = drop_and_rename_columns(dataframe)
