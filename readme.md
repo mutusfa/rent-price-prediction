@@ -273,9 +273,3 @@ last_inferences
            {'number_of_floors': 2.0, 'equipment': 'Įrengtas', 'number_of_rooms': 1.0, 'street': 'tunelio-g', 'longitude': 23.936227, 'district': 'centre', 'inferred_monthly_rent': 198.8716239829286, 'heating_type': 'Dujinis', 'build_year': 1939.0, 'floor': 1.0, 'floor_area_m2': 25.0, 'latitude': 54.889328, 'city': 'kaune', 'id': 77, 'building_type': 'Medinis'},
            {'number_of_floors': 2.0, 'equipment': 'Įrengtas', 'number_of_rooms': 1.0, 'street': 'tunelio-g', 'longitude': 23.936227, 'district': 'centre', 'inferred_monthly_rent': 198.87162398292858, 'heating_type': 'Dujinis', 'build_year': 1939.0, 'floor': 1.0, 'floor_area_m2': 25.0, 'latitude': 54.889328, 'city': 'kaune', 'id': 76, 'building_type': 'Medinis'}],
           dtype=object)
-
-
-
-#### Check (auto-generated) documentation:
-
-https://jjuoda-ds-24.herokuapp.com/docs
