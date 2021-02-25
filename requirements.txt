@@ -1,15 +1,66 @@
-click==7.1.2
-fastapi==0.63.0
-h11==0.12.0
-jedi==0.17.2
-joblib==1.0.0
-numpy==1.19.5
-pandas==1.2.1
-psycopg2-binary==2.8.6
-python-dateutil==2.8.1
-pytz==2020.5
-scikit-learn==0.24.1
-sqlalchemy==1.3.22
-starlette==0.13.6
-threadpoolctl==2.1.0
-uvicorn==0.13.3
+appdirs @ file:///home/julius/.cache/pypoetry/artifacts/47/cf/4f/4ef02fb715aa36daeebad18cc5570126159c659c41c7b5ec46a7387d9b/appdirs-1.4.4-py2.py3-none-any.whl
+attrs @ file:///home/julius/.cache/pypoetry/artifacts/f9/48/82/553e4bef24d3b294c0c18f27a7853f3ed151508efd144cb7ea37db1c48/attrs-20.3.0-py2.py3-none-any.whl
+backcall @ file:///home/julius/.cache/pypoetry/artifacts/43/8e/e8/4e598704edf6fb4a53d552ea511c04e9958dcf850897760e5387878b99/backcall-0.2.0-py2.py3-none-any.whl
+black @ file:///home/julius/.cache/pypoetry/artifacts/56/00/d0/a3bee2cbd161f599bac7d8ee24fb2b17aeba39b53bc42724de21f352bf/black-20.8b1.tar.gz
+certifi @ file:///home/julius/.cache/pypoetry/artifacts/d8/df/24/ed696681f34f8916b0aef99138db9a94e37d54684b9829af34a7fd4e39/certifi-2020.12.5-py2.py3-none-any.whl
+chardet @ file:///home/julius/.cache/pypoetry/artifacts/11/63/f9/797eda27963177a6b75a340f62aa194d462ea69e6b0dbb77a651fa2b62/chardet-4.0.0-py2.py3-none-any.whl
+click @ file:///home/julius/.cache/pypoetry/artifacts/e2/79/34/a23e9d2f683ed66be11ec3bd760dec3a2fe228cfdedf2071bcf0531b06/click-7.1.2-py2.py3-none-any.whl
+cycler @ file:///home/julius/.cache/pypoetry/artifacts/af/e8/be/e7e2a18c4317324d4e3beeec6f4366506194f59bad1c2fbe91a54445eb/cycler-0.10.0-py2.py3-none-any.whl
+decorator @ file:///home/julius/.cache/pypoetry/artifacts/4e/0d/42/3677b6c493b68794c351e9fbd528ed0b596d4b11793d757285eb694b48/decorator-4.4.2-py2.py3-none-any.whl
+Flask @ file:///home/julius/.cache/pypoetry/artifacts/2f/65/9e/7fe305316b8f564a8577a93bfeb984493ce9eeb1e8926abb0ed9030910/Flask-1.1.2-py2.py3-none-any.whl
+gunicorn @ file:///home/julius/.cache/pypoetry/artifacts/a6/65/a7/4b58823c91bc813ac9e95258024ddc1f2678b5bfc0ea3bc134495a203e/gunicorn-20.0.4-py2.py3-none-any.whl
+idna @ file:///home/julius/.cache/pypoetry/artifacts/ef/7f/a9/19cc0b8760bdf6f696290c06532496f8bb29fbdaad044f852fed00ec82/idna-2.10-py2.py3-none-any.whl
+iniconfig @ file:///home/julius/.cache/pypoetry/artifacts/fa/b0/c6/10cfac68c9e6de9d2a1678366ca89fd9292b362c1760dbe758e41691cb/iniconfig-1.1.1-py2.py3-none-any.whl
+ipykernel @ file:///home/julius/.cache/pypoetry/artifacts/e6/f2/90/91ae9af09b20eda83a5bb288849ca10a0d9b0601c1bcab47cca97c4109/ipykernel-5.5.0-py3-none-any.whl
+ipython @ file:///home/julius/.cache/pypoetry/artifacts/b0/fb/2d/33b22dedf8067ec1162207bb49128c8996946a5dcf349a0b72ffdf0086/ipython-7.20.0-py3-none-any.whl
+ipython-genutils @ file:///home/julius/.cache/pypoetry/artifacts/b4/31/01/6f96480580d1674cab0b5e26dc9fca7bbdf7a2fd5811a7807a92436268/ipython_genutils-0.2.0-py2.py3-none-any.whl
+itsdangerous @ file:///home/julius/.cache/pypoetry/artifacts/82/e8/60/17593e06004d937316208bbf3859251fdedf80e106b9847181760ee2dd/itsdangerous-1.1.0-py2.py3-none-any.whl
+jedi @ file:///home/julius/.cache/pypoetry/artifacts/dd/f2/eb/07229d51e9fe5380624ca2970b00863c2a1c1b011fb745674cf1433029/jedi-0.17.2-py2.py3-none-any.whl
+Jinja2 @ file:///home/julius/.cache/pypoetry/artifacts/c5/c3/19/5cf0bc7ff64d230dd7d23c044479d2b44dabe877ca4165c2d85cbe996d/Jinja2-2.11.3-py2.py3-none-any.whl
+joblib @ file:///home/julius/.cache/pypoetry/artifacts/28/41/26/7ed6532cff9d56b8d2878f93bc289c075f338c12aa7d630862aae39d45/joblib-1.0.1-py3-none-any.whl
+jsonschema @ file:///home/julius/.cache/pypoetry/artifacts/db/1d/66/ad84fa70cc987bd4aad68be808562321cdab3cb03f4d5d7714a0e0571c/jsonschema-3.2.0-py2.py3-none-any.whl
+jupyter-client @ file:///home/julius/.cache/pypoetry/artifacts/8e/e2/19/58cade905caa48d522eb50207a16dd4af87021dfc0c4eb6acadf716a6d/jupyter_client-6.1.11-py3-none-any.whl
+jupyter-core @ file:///home/julius/.cache/pypoetry/artifacts/91/8f/22/1377f102bb4478eb073c741714348b7cbb6518d221da9c232cfc5242b3/jupyter_core-4.7.1-py3-none-any.whl
+kiwisolver @ file:///home/julius/.cache/pypoetry/artifacts/b0/3e/dd/9e102bc187a735e9c55414e8529e4eca4ccf7c94868e9eaf4e30612e20/kiwisolver-1.3.1-cp39-cp39-manylinux1_x86_64.whl
+MarkupSafe @ file:///home/julius/.cache/pypoetry/artifacts/a4/78/86/1bb0a788648c202bcaa2e95a65f75ad0939c3d4fe432ce5b720eb424d3/MarkupSafe-1.1.1-cp39-cp39-manylinux2010_x86_64.whl
+matplotlib @ file:///home/julius/.cache/pypoetry/artifacts/13/bf/94/d796b93a140aca4d596ceef9d6a6c8003b291f02bccaff1f140d77ae79/matplotlib-3.3.4-cp39-cp39-manylinux1_x86_64.whl
+mypy-extensions @ file:///home/julius/.cache/pypoetry/artifacts/92/45/bf/1807ce854ff668d92602207a37bfa9316def2a3f257bd03c4c5be4bc9b/mypy_extensions-0.4.3-py2.py3-none-any.whl
+nbformat @ file:///home/julius/.cache/pypoetry/artifacts/97/5a/94/9fb619d05b326898bf7960e2fe080671512d4bcc000d96ee676161825f/nbformat-5.1.2-py3-none-any.whl
+numpy @ file:///home/julius/.cache/pypoetry/artifacts/43/46/5a/1c2baff5efec3c33813cc5751de96d64dfc46fd5b189f4e4a272227dc5/numpy-1.20.1-cp39-cp39-manylinux2010_x86_64.whl
+packaging @ file:///home/julius/.cache/pypoetry/artifacts/c2/76/aa/699ed723689e741411dfbdbc9b8c392079d54fb1e1a1b814df7be7cf47/packaging-20.9-py2.py3-none-any.whl
+pandas @ file:///home/julius/.cache/pypoetry/artifacts/23/ed/e4/d1cd9583d68f5b897c2dfd3a3430d11e981e54f2610e86bbf9108d35d9/pandas-1.2.2-cp39-cp39-manylinux1_x86_64.whl
+parso @ file:///home/julius/.cache/pypoetry/artifacts/f3/cd/ca/acd87c17e91f28f45efa8541835e65b4b9b21ee05ec9da8114ac730fb6/parso-0.7.1-py2.py3-none-any.whl
+pathspec @ file:///home/julius/.cache/pypoetry/artifacts/40/8b/b2/80a6945971d8475bcc04d09afec4845855dd74f68da6a4c18bbf8f7784/pathspec-0.8.1-py2.py3-none-any.whl
+pexpect @ file:///home/julius/.cache/pypoetry/artifacts/5c/c2/43/b54fe59cab7e831df35401c8e6840162bf4a2ae5862604e7bc22db3000/pexpect-4.8.0-py2.py3-none-any.whl
+pickleshare @ file:///home/julius/.cache/pypoetry/artifacts/b5/48/a1/d2b823337003d531d87cf0d503ef28bb579703a74d14ad24a88863d616/pickleshare-0.7.5-py2.py3-none-any.whl
+Pillow @ file:///home/julius/.cache/pypoetry/artifacts/0a/a2/5b/2326e7164eba693d87968513704cd00843f2ff006e0d55a79c8e209f6a/Pillow-8.1.0-cp39-cp39-manylinux1_x86_64.whl
+plotly @ file:///home/julius/.cache/pypoetry/artifacts/a7/95/ec/3dc20d075f2161f6a30213fc7d8bbc002438116c0150d454e777087d03/plotly-4.14.3-py2.py3-none-any.whl
+pluggy @ file:///home/julius/.cache/pypoetry/artifacts/29/58/fc/ed8b7451d3ef91a6465024f5656141da996e7aafd4d41a1659629a75e7/pluggy-0.13.1-py2.py3-none-any.whl
+prompt-toolkit @ file:///home/julius/.cache/pypoetry/artifacts/92/34/b3/b8e4302f6fc97927399453a5519808399cdf1e380b9b470ec26506f1cc/prompt_toolkit-3.0.16-py3-none-any.whl
+psycopg2-binary @ file:///home/julius/.cache/pypoetry/artifacts/7b/a0/a4/a48cee3650bebc08798826d07404c087c876328711a0941ac5c07fd8c3/psycopg2_binary-2.8.6-cp39-cp39-manylinux1_x86_64.whl
+ptyprocess @ file:///home/julius/.cache/pypoetry/artifacts/2a/29/5d/0cdc5ec916431d60f03d2f725c54edbfa9fe53700b75fdfee209a3291e/ptyprocess-0.7.0-py2.py3-none-any.whl
+py @ file:///home/julius/.cache/pypoetry/artifacts/60/79/0b/c48bd9c2a989aa8b1eb7a67cd02b053c10734f2e4e5665f7995f09999c/py-1.10.0-py2.py3-none-any.whl
+Pygments @ file:///home/julius/.cache/pypoetry/artifacts/a7/67/66/8b3533eda158a09ab0c48a9648abb73e1c67ed78d23d753b8feac9bd4d/Pygments-2.8.0-py3-none-any.whl
+pyparsing @ file:///home/julius/.cache/pypoetry/artifacts/92/0f/cf/effdcd5d76a6186df0969f85b3b030284ff8058936d5016540b5258ea3/pyparsing-2.4.7-py2.py3-none-any.whl
+pyrsistent @ file:///home/julius/.cache/pypoetry/artifacts/87/35/d0/3b060e2c3d87134fe1a94dab28a278f8f09a805853913c3e9fac5b7ee8/pyrsistent-0.17.3.tar.gz
+pytest @ file:///home/julius/.cache/pypoetry/artifacts/61/a8/ec/1ad0d4114cf9e069c28315cff0a4774573e5b8656efa7a78d2f50c20e4/pytest-6.2.2-py3-none-any.whl
+python-dateutil @ file:///home/julius/.cache/pypoetry/artifacts/93/67/cf/49f56d9e954addcfc50e5ffc9faee013c2eb00c6d77d56c6a22cb33b54/python_dateutil-2.8.1-py2.py3-none-any.whl
+python-dotenv @ file:///home/julius/.cache/pypoetry/artifacts/e3/92/c3/26980a0b9ac05a9afa82d3c6120afe6864eada1e344b6dd84dbf9f420f/python_dotenv-0.15.0-py2.py3-none-any.whl
+pytz @ file:///home/julius/.cache/pypoetry/artifacts/b0/a7/8d/54de3ab4d1ff29abbbca1e9ccbaefdc2a1b290138311b84f73bee16de1/pytz-2021.1-py2.py3-none-any.whl
+pyzmq @ file:///home/julius/.cache/pypoetry/artifacts/2c/e8/76/7975fd02195b85073c9224b1a46f4e9d43b1c12e2e5ed75e367c2c6ff2/pyzmq-22.0.3-cp39-cp39-manylinux2010_x86_64.whl
+regex @ file:///home/julius/.cache/pypoetry/artifacts/a5/0c/c1/33400529698ff03037d95e34dd929002b124500316b658d69cd202001e/regex-2020.11.13-cp39-cp39-manylinux2014_x86_64.whl
+requests @ file:///home/julius/.cache/pypoetry/artifacts/22/0a/9d/0df883fbffbb406d0cddbb35e881e4ac6bfb8f0dee8733056b6a054bf7/requests-2.25.1-py2.py3-none-any.whl
+retrying @ file:///home/julius/.cache/pypoetry/artifacts/47/5c/83/d2c8eb4fff57a6be508eabe093c1635627c654874edec4aa30e65a5bb8/retrying-1.3.3.tar.gz
+scikit-learn @ file:///home/julius/.cache/pypoetry/artifacts/72/9e/07/b2cdf03a79b58c38861ec83e91c7b345b5d89923a9c5c29f90c14735c9/scikit_learn-0.24.1-cp39-cp39-manylinux2010_x86_64.whl
+scipy @ file:///home/julius/.cache/pypoetry/artifacts/38/b1/34/3042279b1e8fb7a0826d7b0c415d80def4d3984c35627e74228c3664dc/scipy-1.5.4-cp39-cp39-manylinux1_x86_64.whl
+seaborn @ file:///home/julius/.cache/pypoetry/artifacts/b6/bf/61/71381be5d5781df667223df9013be6bef5cb8d26f723a95c847ddd211f/seaborn-0.11.1-py3-none-any.whl
+six @ file:///home/julius/.cache/pypoetry/artifacts/dd/1c/65/ad0dea11136f5a869f072890a0eea955aa8fc35b90c85c55249fd3abfe/six-1.15.0-py2.py3-none-any.whl
+threadpoolctl @ file:///home/julius/.cache/pypoetry/artifacts/67/60/3b/3c54fb2d89536f49ad17f002eefcf0abd98f373c5f1804c5298a815c0a/threadpoolctl-2.1.0-py3-none-any.whl
+toml @ file:///home/julius/.cache/pypoetry/artifacts/6b/6a/c9/53b19f7870a77d855e8b05ecdc98193944e5d246dafe11bbcad850ecba/toml-0.10.2-py2.py3-none-any.whl
+tornado @ file:///home/julius/.cache/pypoetry/artifacts/32/ff/76/0fc7d26eab2180c92fa57552212f38defaf212ceb7ddc9432bd84d646c/tornado-6.1-cp39-cp39-manylinux2010_x86_64.whl
+traitlets @ file:///home/julius/.cache/pypoetry/artifacts/f3/6b/36/998ab52c38eb1c4820cdef1e66043ddebb64e04535f88dbfd04486ce03/traitlets-5.0.5-py3-none-any.whl
+typed-ast @ file:///home/julius/.cache/pypoetry/artifacts/cd/79/52/46fe8f18205909c174875a57775caf1386309766aad7e887cc0d4b023d/typed_ast-1.4.2-cp39-cp39-manylinux1_x86_64.whl
+typing-extensions @ file:///home/julius/.cache/pypoetry/artifacts/ab/c3/72/446cb2c521f10fc837619e8a7c68ed3c3bd74859bd625b7d74f38a159b/typing_extensions-3.7.4.3-py3-none-any.whl
+urllib3 @ file:///home/julius/.cache/pypoetry/artifacts/3d/49/75/4245c9a53c80e9d437e00720b38959ccd850e173b62242bcea85c1b100/urllib3-1.26.3-py2.py3-none-any.whl
+wcwidth @ file:///home/julius/.cache/pypoetry/artifacts/7d/f4/60/0737157bb9711fec72c70dff523aa54491eef317e0d586cf5388ff0908/wcwidth-0.2.5-py2.py3-none-any.whl
+Werkzeug @ file:///home/julius/.cache/pypoetry/artifacts/5b/83/26/5e5a83cbe509bcc5d52ce4a8fba5d1ad0f8bd321d67002ec782bade539/Werkzeug-1.0.1-py2.py3-none-any.whl

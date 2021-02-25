@@ -1,0 +1,12 @@
+What is an api?
+I don't know. Watch some other videos
+
+How is the project structured?
+
+How to use flask development server?
+
+How to test your application?
+
+How to push application to heroku?
+
+What are environmental variables and how does one eat them?

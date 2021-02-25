@@ -26,12 +26,12 @@ def encode_data(
     """Encodes categorical features using one-hot encoding.
 
     If passed an existing encoder, will use that one.
-    
+
     Inputs:
     :rent_features: - features to be encoded and scaled
     :one_hot_encoder: - pretrained OneHotEncoder (creates new if None)
     :scaler: - pretrained StandardScaler (creates new if None)
-    
+
     Returns:
     Tuple of:
     encoded and scaled features
@@ -39,7 +39,8 @@ def encode_data(
     StandardScaler that was used
     """
     if not one_hot_encoder:
-        one_hot_encoder = OneHotEncoder().fit(rent_features[CATEGORICAL_COLUMNS])
+        one_hot_encoder = OneHotEncoder().fit(
+            rent_features[CATEGORICAL_COLUMNS])
 
     encoded_data = one_hot_encoder.transform(
         rent_features[CATEGORICAL_COLUMNS]

@@ -11,6 +11,9 @@ regions it would be profitable.
 
 ## Workflow from A to Z
 
+Skip ahead to `### Accessing model via api` if you only need to use my model for
+inferences.
+
 ### Gathering data
 
 
@@ -218,7 +221,7 @@ import numpy as np
 import requests
 
 features_for_inference = [
-    {
+    {"features": {
         "city": "kaune",
         "district": "centre",
         "latitude": 54.889328,
@@ -232,7 +235,7 @@ features_for_inference = [
         "building_type": "Medinis",
         "heating_type": "Dujinis",
         "equipment": "Įrengtas",
-    }
+    }}
 ]
 url = "https://jjuoda-ds-24.herokuapp.com/predict/"
 response = requests.post(url, json=features_for_inference)
